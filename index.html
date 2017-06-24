@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+   
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    
+    <title>The Space Trivia Quiz</title>
+</head>
+<body>
+<header>
+    <div class="content">
+        <h1><span>The</span> <span>Space</span> <span>Trivia Quiz</span></h1>
+    </div>
+</header>
+<main id="main" role="main">
+
+    <div class="content"> 
+
+        <section id="quiz" class="hidden">
+            <div id="stats" class="clearfix">
+                <div id="stats-score">SCORE: <span class="score">0</span></div>
+                <div id="stats-progress">QUESTION: <span class="progress">0/0</span></div>
+            </div>
+            <div id="question">
+                <div id="icon"><i class="fa fa-bolt"></i></div>
+                <p id="text">[question text]</p>
+                <form>
+                <div><input type="radio" name="ans" value="1"> <span id="option-1">[option one]</span> </div>
+                <div><input type="radio" name="ans" value="2"> <span id="option-2">[option two]</span> </div>
+                <div><input type="radio" name="ans" value="3"> <span id="option-3">[option three]</span> </div>
+                <div><input type="radio" name="ans" value="4"> <span id="option-4">[option four]</span> </div>
+                <div><input type="radio" name="ans" value="5"> <span id="option-5">[option five]</span> </div>
+                </form>
+                <button id="answer-btn">Submit Answer</button>  
+            </div>
+        </section>
+
+        <section id="start" class="clearfix">
+            <div id="instruct">
+                <h2>How to Play</h2>
+                <p><strong>STEP 1</strong>: You are being tested for your space knowledge and abilities to navigate a space ship. Answer the following 10 questions to the best of your ability. You will be timed.</p>
+                <p><strong>STEP 2</strong>: Your score will determine your rank on the ship. Good luck!</p>
+            </div>
+            <div id="btn-area">
+                <button id="start-btn"> NEW GAME </button>            
+            </div>
+        </section>
+
+        
+
+        <section id="correct" class="pop-up hidden">
+            <h2>CORRECT!<br>+1</h2>
+            <p class="answer-exp">[x]</p>
+            <p>You gained <span class="score">0</span> point(s).</p>
+            <br>
+            <p><button class="cont-btn">Continue</button></p>
+        </section>
+
+        <section id="wrong" class="pop-up hidden">
+            <h2>WRONG!</h2>
+            <p class="answer-exp">[x]</p>
+            <p>You gained <span class="score">0</span> point(s).</p>
+            <br>
+            <p><button class="cont-btn">Continue</button></p>
+        </section>
+
+        <section id="final" class="pop-up hidden">
+            <h2>Final Score: <span class="score">0</span>/10</h2>
+            <p>You achieved a rank of ...<br><span class="rank">[rank]</span></p>
+            <p><span class="rank-msg">[msg]</span></p>
+            <br>
+            <p><button id="start-over">Try Again</button></p>
+        </section>
+
+    </div>
+
+</main>
+
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
